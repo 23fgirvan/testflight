@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auroraos"
+version = "0.1.0"
+description = "Tablet OS architecture simulator inspired by modern mobile platforms"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "AuroraOS Team"}]
+
+[project.scripts]
+auroraos-demo = "auroraos.demo:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
